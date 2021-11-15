@@ -1,0 +1,56 @@
+@mixin cajas {
+    border: 3px solid $colorPrincipal;
+	margin: 2%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin header-footer {
+    background-color: $colorSecundario;
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin propiedadesContenedores {
+    width: 98%;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+// ------------------------------------------------------------------------------------------------
+
+@mixin navDesktop {
+    padding: 0;
+	text-align: center;
+	grid-area: nav;
+}
+
+@mixin cajasDesktop {
+    border: 3px solid $colorPrincipal;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin propiedadesTestimonioDesktop {
+    margin: 0;
+	padding: 30px;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+@mixin propiedadesContenedoresDesktop {
+    width: 95%;
+	max-width: 1400px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+}
