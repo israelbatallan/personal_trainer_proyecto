@@ -54,3 +54,274 @@
 	grid-gap: 10px;
 	grid-template-columns: repeat(1, 1fr);
 }
+
+@mixin seccionAyuda {
+	/* Página Ayuda*/
+  
+	.contenedorAyuda {
+		@include propiedadesContenedoresDesktop;
+		grid-template-rows: repeat(10, auto);
+		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "footer";
+	
+		.nav {
+			@include navDesktop;
+		}
+	
+		.caja1 {
+			margin: 0;
+			grid-area: caja1;
+		}
+	}
+  
+	/* Cajas */
+  
+	.caja1 > {
+		h2 {
+			font-size: 22px;
+		}
+	
+		h3 {
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+  
+	.contenedorAyuda {
+		.caja2 {
+			@include cajasDesktop;
+			grid-area: caja2;
+		}
+	
+		.caja3 {
+			@include cajasDesktop;
+			grid-area: caja3;
+		}
+	
+		.caja4 {
+			@include cajasDesktop;
+			grid-area: caja4;
+		}
+	
+		.caja5 {
+			@include cajasDesktop;
+			grid-area: caja5;
+		}
+	
+		.caja6 {
+			@include cajasDesktop;
+			grid-area: caja6;
+		}
+	}
+  
+	.scaleBox {
+		transition: 3s;
+	
+		&:hover {
+			transform: scale(1.05, 1.05);
+		}
+	}
+  
+	.imagenes {
+		border-radius: 10px;
+		width: 240px;
+		height: 160px;
+	}
+  
+	.textoTitulo {
+		font-size: 20px;
+		color: $colorPrincipal;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+  
+	.textoInfo {
+		font-size: 16px;
+		margin-top: 15px;
+		line-height: 25px;
+	}
+  
+	.cuadroDos .textoInfo {
+		text-align: justify;
+	}
+  
+	/* Cajas */
+	/* Página Ayuda*/
+}
+
+@mixin seccionFases {
+	/* Página Fases*/
+  
+	.contenedorFases {
+		@include propiedadesContenedoresDesktop;
+		grid-template-rows: repeat(9, auto);
+		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "footer";
+	
+		.nav {
+			@include navDesktop;
+		}
+	
+		.caja1 {
+			margin: 0;
+			grid-area: caja1;
+		}
+	
+		.caja2 {
+			@include cajasDesktop;
+			grid-area: caja2;
+		}
+	
+		.caja3 {
+			@include cajasDesktop;
+			grid-area: caja3;
+		}
+	
+		.caja4 {
+			@include cajasDesktop;
+			grid-area: caja4;
+		}
+	
+		.caja5 {
+			@include cajasDesktop;
+			grid-area: caja5;
+		}
+	}
+	/* Página Fases*/
+}
+
+@mixin seccionServicios {
+	/* Página Servicios*/
+  
+	.contenedorServicios {
+		@include propiedadesContenedoresDesktop;
+		grid-template-rows: repeat(8, auto);
+		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "footer";
+	
+		.nav {
+			@include navDesktop;
+		}
+	
+		.caja1 {
+			margin: 0;
+			grid-area: caja1;
+		}
+	
+		.caja2 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja2;
+		}
+	
+		.caja3 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja3;
+		}
+	
+		.caja4 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja4;
+		}
+	}
+	/* Página Servicios*/
+}
+
+@mixin seccionTestimonios {
+	/* Página Testimonios*/
+  
+	.contenedorTestimonios {
+		width: 95%;
+		max-width: 1400px;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(7, auto);
+		grid-template-areas: "header         header" "nav            nav" "titulo         titulo" "caja1          caja1" "caja2          caja3" "caja4          caja5" "footer         footer";
+	
+		.nav {
+			@include navDesktop;
+		}
+	
+		.caja1 {
+			margin: 0;
+			grid-area: caja1;
+		}
+	}
+  
+	/* Cajas */
+  
+	.caja1 > {
+		h2 {
+			font-size: 22px;
+		}
+	
+		h3 {
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+  
+	.contenedorTestimonios {
+		.caja2 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja2;
+		}
+	
+		.caja3 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja3;
+		}
+	
+		.caja4 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja4;
+		}
+	
+		.caja5 {
+			@include propiedadesTestimonioDesktop;
+			grid-area: caja5;
+		}
+	}
+  
+	/* Cajas */
+	/* Página Testimonios*/
+}
+
+@mixin seccionContacto {
+	/* Página Contacto*/
+  
+	.contenedorContacto {
+		@include propiedadesContenedoresDesktop;
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "footer";
+	
+		.nav {
+			@include navDesktop;
+		}
+	
+		.caja1 {
+			margin: 0;
+			grid-area: caja1;
+		}
+	
+		.caja2 {
+			width: 50%;
+			margin: 0;
+			padding: 10px;
+			margin-left: 25%;
+			grid-area: caja2;
+		}
+	}
+  
+	/* Cajas contacto */
+  
+	.boton {
+		background: transparent;
+		transition: 0.5s;
+	
+		&:hover {
+			background: none;
+			box-shadow: 0 0 10px $colorPrincipal, 0 0 40px $colorPrincipal, 0 0 80px $colorPrincipal;
+		}
+	}
+  
+	/* Cajas contacto */
+	/* Página Contacto*/
+}

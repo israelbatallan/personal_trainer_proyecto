@@ -6,8 +6,8 @@
 		grid-template-areas: "header" "nav" "titulo" "main" "seccion-1" "seccion-2" "footer";
 	
 		.header, .nav, .titulo, .main, .seccion-1, .seccion-2, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.25rem;
+			border-radius: 0.6rem;
 		}
 	
 		.header {
@@ -18,7 +18,7 @@
   
 	// Header
 	.header > div {
-		width: 50%;
+		width: 70%;
 	}
   
 	.logo {
@@ -28,14 +28,15 @@
   
 	.tituloLogo {
 		color: $colorPrincipal;
-		font-size: 16px;
-		line-height: 16px;
+		font-size: 1.2rem;
+		line-height: 1rem;
 	}
   
 	.subTituloLogo {
+		width: 150%;
 		color: $colorLetras;
-		font-size: 10px;
-		line-height: 0px;
+		font-size: 0.75rem;
+		line-height: 0;
 	}
   
 	.logo > a {
@@ -43,7 +44,7 @@
 	}
   
 	.iconos1 {
-		font-size: 22px;
+		font-size: 1.4rem;
 		color: #7e7e7e;
 		display: flex;
 		justify-content: flex-end;
@@ -68,7 +69,7 @@
 	}
   
 	.nav-item {
-		width: 150px;
+		width: 9.3rem;
 		text-align: center;
 	}
   
@@ -76,14 +77,14 @@
   
 	.nav ul {
 		a {
-			font-size: 12px;
+			font-size: 0.8rem;
 			text-transform: uppercase;
-			letter-spacing: 1px;
+			letter-spacing: 0.1rem;
 		}
 	
 		li {
 			position: relative;
-			border-radius: 10px;
+			border-radius: 0.6rem;
 	
 			&:hover {
 			background: $colorPrincipal;
@@ -106,28 +107,28 @@
 		padding: 0;
 		grid-area: titulo;
 	}
-  
-	.tamaño {
-		top: -25px;
-	}
-  
+
 	.titulo {
-		height: 200px;
+		height: auto;
+
+		.titulo1 {
+			top: 0.3rem;
+			left: 0.6rem;
+			z-index: 2;
+			position: absolute;
+		
+			> h1 {
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	#carouselExampleIndicators > .tamaño {
+		top: auto;
 	}
   
 	.bordes {
-		border-radius: 10px;
-	}
-  
-	.titulo1 {
-		position: relative;
-		top: 5px;
-		left: 10px;
-		z-index: 1;
-	
-		> h1 {
-			font-size: 13px;
-		}
+		border-radius: 0.6rem;
 	}
   
 	span {
@@ -142,8 +143,7 @@
 	}
   
 	.imagenMain {
-		border-radius: 10px;
-		width: 55%;
+		border-radius: 0.6rem;
 	}
   
 	.cuadroUno {
@@ -153,17 +153,18 @@
 	}
   
 	.cuadroDos {
-		padding: 2%;
+		padding: 3%;
 	}
   
 	.subTituloIndex {
 		text-align: center;
 		color: $colorPrincipal;
-		font-size: 22px;
+		font-size: 1.4rem;
 	}
   
 	.parrafoIndex {
-		font-size: 14px;
+		font-size: 0.9rem;
+		line-height: 1.5rem;
 	}
 	// Main
   
@@ -176,7 +177,7 @@
 		}
 	
 		.seccion-2 {
-			border: 3px solid $colorPrincipal;
+			border: 0.2rem solid $colorPrincipal;
 			margin: 2%;
 			grid-area: seccion-2;
 		}
@@ -184,7 +185,7 @@
   
 	.cuadroTres {
 		height: auto;
-		font-size: 12px;
+		font-size: 0.8rem;
 		padding: 2%;
 		list-style-position: inside;
 	
@@ -205,7 +206,7 @@
 	}
   
 	.info {
-		font-size: 10px;
+		font-size: 0.6rem;
 		display: flex;
 		justify-content: flex-start;
 	
@@ -216,7 +217,7 @@
 	}
   
 	.iconos2 {
-		font-size: 22px;
+		font-size: 1,4rem;
 		color: #7e7e7e;
 		display: flex;
 		justify-content: flex-end;
@@ -240,8 +241,8 @@
 		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "footer";
 	
 		.header, .nav, .titulo, .caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.3rem;
+			border-radius: 0.6rem;
 		}
 	
 		.header {
@@ -272,12 +273,12 @@
 		h2 {
 			color: $colorPrincipal;
 			text-align: center;
-			font-size: 20px;
+			font-size: 1.3rem;
 		}
 	
 		h3 {
 			text-align: center;
-			font-size: 14px;
+			font-size: 0.9rem;
 		}
 	}
   
@@ -309,20 +310,19 @@
 	}
   
 	.imagenes {
-		border-radius: 10px;
-		width: 50%;
+		border-radius: 0.6rem;
 	}
   
 	.textoTitulo {
-		font-size: 18px;
+		font-size: 1.15rem;
 		color: $colorPrincipal;
-		margin-bottom: 15px;
+		margin-bottom: 0.95rem;
 		text-align: center;
 	}
   
 	.textoInfo {
-		font-size: 14px;
-		margin-top: 15px;
+		font-size: 0.9rem;
+		margin-top: 0.95rem;
 	}
 	// Cajas
   
@@ -343,8 +343,8 @@
 		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "footer";
 	
 		.header, .nav, .titulo, .caja1, .caja2, .caja3, .caja4, .caja5, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.25rem;
+			border-radius: 0.6rem;
 	  }
   
 	  .header {
@@ -405,8 +405,8 @@
 		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "footer";
 	
 		.header, .nav, .titulo, .caja1, .caja2, .caja3, .caja4, .caja5, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.25rem;
+			border-radius: 0.6rem;
 	  }
   
 	  .header {
@@ -462,8 +462,8 @@
 		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "footer";
 	
 		.header, .nav, .titulo, .caja1, .caja2, .caja3, .caja4, .caja5, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.25rem;
+			border-radius: 0.6rem;
 	  }
   
 	  .header {
@@ -525,8 +525,8 @@
 		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "footer";
 	
 		.header, .nav, .titulo, .caja1, .caja2, .footer {
-			padding: 20px;
-			border-radius: 10px;
+			padding: 1.25rem;
+			border-radius: 0.6rem;
 	  }
   
 	  .header {
@@ -547,9 +547,9 @@
 	  }
   
 	  .caja1 {
-		border: 3px solid $colorPrincipal;
+		border: 0.2rem solid $colorPrincipal;
 		margin: 2%;
-		padding: 10px;
+		padding: 0.6rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -558,18 +558,18 @@
 	  }
   
 	  .caja2 {
-		border: 3px solid $colorPrincipal;
+		border: 0.2rem solid $colorPrincipal;
 		margin: 2%;
-		padding: 10px;
+		padding: 0.6rem;
 		grid-area: caja2;
 	  }
 	}
 
 	// Cajas contacto
 	.contact {
-	  border: 3px solid transparent;
+	  border: 0.2rem solid transparent;
 	  padding: 5%;
-	  border-radius: 10px;
+	  border-radius: 0.6rem;
 	  text-align: center;
 	  display: flex;
 	  flex-direction: column;
@@ -581,8 +581,8 @@
   
 	.estiloInput {
 	  padding: 1%;
-	  border: 2px solid $colorPrincipal;
-	  border-radius: 10px;
+	  border: 0.15rem solid $colorPrincipal;
+	  border-radius: 0.6;
 	  background-color: $colorSecundario;
 	  transition: 0.5s;
   
@@ -602,13 +602,13 @@
 	  background: transparent;
 	  color: $colorLetras;
 	  width: 30%;
-	  border: 3px solid $colorPrincipal;
-	  border-radius: 10px;
+	  border: 0.2rem solid $colorPrincipal;
+	  border-radius: 0.6rem;
 	  padding: 2%;
-	  font-size: 15px;
+	  font-size: 1rem;
   
 	  &:hover {
-		border: 3px solid $colorPrincipal;
+		border: 0.2rem solid $colorPrincipal;
 		background: $colorPrincipal;
 	  }
 	}
@@ -623,385 +623,298 @@
     // Página Contacto
 }
 @media (orientation: landscape) and (min-width: 321px) and (max-width: 640px) {
-	.tamaño {
-	  top: -40px;
-	}
-  
 	.titulo {
-	  height: 350px;
+		height: auto;
+
+		.titulo1 {
+			top: 0.3rem;
+			left: 0.6rem;
+			z-index: 2;
+			position: absolute;
+		
+			> h1 {
+				font-size: 1.5rem;
+			}
+		}
 	}
-  
-	.titulo1 {
-	  position: relative;
-	  top: 5px;
-	  left: 15px;
-	  z-index: 1;
-  
-	  > h1 {
-		font-size: 25px;
-	  }
+
+	#carouselExampleIndicators > .tamaño {
+		top: auto;
 	}
 }
 // Movil
 
+
+
 // Tablet
-@media screen and (min-width: 642px) and (max-width: 768px) {
+@media screen and (min-width: 641px) and (max-width: 768px) {
 	/* Header */
-  
 	.contenedor {
 	  width: 98%;
-	  margin: 20px auto;
+	  margin: 1.25rem auto;
 	  display: grid;
-	  grid-gap: 10px;
+	  grid-gap: 0.6rem;
 	  grid-template-columns: repeat(1, 1fr);
 	  grid-template-rows: repeat(6, auto);
 	  grid-template-areas: "header" "nav" "titulo" "main" "seccion-1" "seccion-2" "footer";
 	}
   
 	.logo {
-	  /* background: blue; */
-	  color: #7e7e7e;
-	  width: 25%;
-  
 	  > a {
 		> {
-		  h1 {
-			color: $colorPrincipal;
-			font-size: 20px;
-		  }
-  
-		  h2 {
-			font-size: 10px;
-		  }
+			.tituloLogo {
+				font-size: 1.25rem;
+			}
+		
+			.subTituloLogo {
+				font-size: 0.8rem;
+			}
 		}
-  
-		text-decoration: none;
 	  }
 	}
   
 	.iconos1 {
-	  /* background-color: lightblue; */
-	  width: 75%;
-	  font-size: 30px;
-	  color: #7e7e7e;
-	  display: flex;
-	  justify-content: flex-end;
-  
-	  :hover {
-		color: $colorPrincipal;
-	  }
+	  font-size: 1.9rem;
 	}
-  
 	/* Header */
   
-	/* Navegación */
-  
-	.nav {
-	  text-align: center;
-  
-	  > ul {
-		width: 100%;
-  
-		> li {
-		  /* background: blue; */
-		  width: 16.6%;
+	/* Portada */
+	.titulo {
+		height: auto;
+
+		.titulo1 {
+			top: 0.3rem;
+			left: 1rem;
+			z-index: 2;
+			position: absolute;
+		
+			> h1 {
+				font-size: 1.9rem;
+			}
 		}
-	  }
-  
-	  ul li:hover > ul {
-		display: none;
-	  }
 	}
-  
-	/* Navegación */
-  
-	/* Portada */
-  
-	.titulo1 {
-	  position: relative;
-	  top: 45px;
-	  left: 20px;
-	  z-index: 1;
-  
-	  > h1 {
-		font-size: 30px;
-	  }
+
+	#carouselExampleIndicators > .tamaño {
+		top: auto;
 	}
-  
 	/* Portada */
-  
+
 	/* Main */
-  
-	.imagen1 {
-	  border-radius: 10px;
-	  width: 240px;
-	  height: 160px;
+	.cuadroDos > p {
+		font-size: 1.15rem;
+		text-align: justify;
+		line-height: 1.9rem;
+		padding: 0.6rem;
 	}
-  
-	.cuadroUno {
-	  /* background-color: lightblue; */
-	  padding: 10px;
-	  width: 90%;
-	  text-align: center;
-	  margin: 0;
-	}
-  
-	.cuadroDos {
-	  /* background: blue; */
-	  padding: 10px;
-	  width: 90%;
-	}
-  
 	/* Main */
   
 	/* Section */
-  
 	.cuadroTres {
-	  /* background: #000; */
-	  border: none;
-	  height: auto;
+		border: none;
+		list-style-position: inside;
 	}
   
+	.cuadroTres > p {
+		font-size: 1.15rem;
+		text-align: justify;
+		line-height: 1.9rem;
+	}
+
+	.parrafoIndex {
+		font-size: 1.15rem;
+		text-align: justify;
+		line-height: 2.5rem;
+	}
 	/* Section */
   
 	/* Footer */
-  
-	.footer > div {
-	  width: 50%;
-	}
-  
 	.info {
-	  font-size: 10px;
+	  font-size: 0.9rem;
 	}
   
 	.iconos2 {
-	  /* background-color: lightblue; */
-	  font-size: 30px;
-	  color: #7e7e7e;
-	  display: flex;
-	  justify-content: flex-end;
+	  font-size: 1.9rem;
 	}
-  
-	i {
-	  margin-left: 1%;
-	}
-  
-	.iconos2 :hover {
-	  color: $colorPrincipal;
-	}
-  
 	/* Footer */
 }
 @media (orientation: landscape) and (min-width: 769px) and (max-width: 1024px) {
 	.contenedor {
 	  width: 95%;
-  
-	  /* max-width: 1000px; */
-  
 	  display: grid;
-	  grid-gap: 10px;
+	  grid-gap: 0.6rem;
 	  grid-template-columns: repeat(2, 1fr);
 	  grid-template-rows: repeat(6, auto);
 	  grid-template-areas: "header        header" "nav           nav" "titulo        titulo" "main          main" "seccion-1     seccion-2" "footer        footer";
 	}
   
 	/* Header */
-  
 	.logo {
-	  /* background: blue; */
-	  color: #7e7e7e;
-	  width: 20%;
-  
-	  > a {
-		> {
-		  h1 {
-			color: $colorPrincipal;
-			font-size: 22px;
-		  }
-  
-		  h2 {
-			font-size: 12px;
+		> a {
+		  > {
+			  .tituloLogo {
+				  font-size: 1.25rem;
+			  }
+		  
+			  .subTituloLogo {
+				  font-size: 0.8rem;
+			  }
 		  }
 		}
-  
-		text-decoration: none;
 	  }
-	}
-  
-	.iconos1 {
-	  /* background-color: lightblue; */
-	  width: 80%;
-	  font-size: 30px;
-	  color: #7e7e7e;
-	  display: flex;
-	  justify-content: flex-end;
-  
-	  :hover {
-		color: $colorPrincipal;
+	
+	  .iconos1 {
+		font-size: 1.9rem;
 	  }
-	}
-  
 	/* Header */
   
 	/* Navegación */
-  
 	.contenedor .nav {
-	  /* background-color: $colorSecundario; */
 	  text-align: center;
 	  grid-area: nav;
 	}
   
 	.nav {
-	  > ul {
-		width: 80%;
-  
-		> li {
-		  width: 124.3px;
+		width: 100%;
+		ul {
+			border: none;
+	
+			> li {
+			margin: 0.15rem;
+			width: 9.4rem;
+			border: 0.15rem solid $colorPrincipal;
+			}
 		}
-	  }
-  
-	  ul li:hover > ul {
-		display: none;
-	  }
 	}
-  
+
+	ul li:hover > ul {
+		display: none;
+	}
 	/* Navegación */
   
 	/* Portada */
-  
-	.titulo1 {
-	  position: relative;
-	  top: 55px;
-	  left: 20px;
-	  z-index: 1;
-  
-	  > h1 {
-		font-size: 40px;
-	  }
+	.titulo {
+		height: auto;
+
+		.titulo1 {
+			top: 0.3rem;
+			left: 0.9rem;
+			z-index: 2;
+			position: absolute;
+		
+			> h1 {
+				font-size: 2.3rem;
+			}
+		}
 	}
-  
+
+	#carouselExampleIndicators > .tamaño {
+		top: auto;
+	}
 	/* Portada */
   
 	/* Main */
-  
 	.contenedor .main {
-	  /* background-color: #001644; */
-	  border: 3px solid $colorPrincipal;
+	  @include cajasDesktop;
 	  grid-area: main;
-	  display: flex;
-	  flex-direction: row;
-	}
-  
-	.imagen1 {
-	  border-radius: 10px;
-	  width: 240px;
-	  height: 160px;
 	}
   
 	.cuadroUno {
-	  /* background-color: lightblue; */
-	  padding: 10px;
-	  width: 30%;
-	  text-align: center;
-	  margin: 0;
+		padding: 2%;
 	}
   
 	.cuadroDos {
-	  /* background: blue; */
-	  width: 70%;
+		padding: 2%;
+		text-align: justify;
+		line-height: 1.9rem;
 	}
-  
 	/* Main */
   
 	/* Section */
-  
 	.contenedor {
-	  .seccion-1 {
-		/* background-color: #0011ad; */
-		grid-area: seccion-1;
-	  }
-  
-	  .seccion-2 {
-		/* background-color: #0011ad; */
-		grid-area: seccion-2;
-	  }
+		.seccion-1 {
+			margin: 0;
+			grid-area: seccion-1;
+		}
+	
+		.seccion-2 {
+			margin: 0;
+			grid-area: seccion-2;
+		}
 	}
   
 	.cuadroTres {
-	  /* background: #000; */
-	  border: none;
-	  list-style-position: inside;
+		border: none;
+		list-style-position: inside;
+		font-size: 1rem;
 	}
   
+	.cuadroTres > p {
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+	}
 	/* Section */
   
 	/* Footer */
-  
-	.footer > div {
-	  width: 50%;
-	}
-  
 	.info {
-	  font-size: 14px;
-	}
-  
-	.iconos2 {
-	  /* background-color: lightblue; */
-	  font-size: 30px;
-	  color: #7e7e7e;
-	  display: flex;
-	  justify-content: flex-end;
-	}
-  
-	i {
-	  margin-left: 1%;
-	}
-  
-	.iconos2 :hover {
-	  color: $colorPrincipal;
-	}
-  
+		font-size: 0.9rem;
+	  }
+	
+	  .iconos2 {
+		font-size: 1.9rem;
+	  }
 	/* Footer */
+
+	// ------------------------------------------------------------------------------------------------
+
+	/* Secciones */
+	@include seccionAyuda;
+	@include seccionFases;
+	@include seccionServicios;
+	@include seccionTestimonios;
+	@include seccionContacto;
+	/* Secciones */
 }
 // Tablet
+
+
 
 // Desktop
 @media screen and (min-width: 1025px) {
 	.contenedor {
 		width: 95%;
-		max-width: 1400px;
+		max-width: 87.5rem;
 		display: grid;
-		grid-gap: 10px;
+		grid-gap: 0.6rem;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(6, auto);
 		grid-template-areas: "header        header" "nav           nav" "titulo        titulo" "main          main" "seccion-1     seccion-2" "footer        footer";
 	}
   
 	/* Header */
-  
 	.logo > a > {
-		h1 {
-			font-size: 20px;
+		.tituloLogo {
+			font-size: 1.4rem;
 		}
 	
-		h2 {
-			font-size: 12px;
+		.subTituloLogo {
+			font-size: 0.9rem;
 		}
 	}
   
 	.tituloLogo {
 		color: $colorPrincipal;
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 1.25rem;
+		line-height: 1.25rem;
 	}
   
 	.subTituloLogo {
-		font-size: 12px;
+		font-size: 0.8rem;
 		line-height: 0;
 	}
   
 	.iconos1 {
-		font-size: 30px;
+		font-size: 1.9rem;
 	}
   
 	.scaleIcon {
@@ -1011,11 +924,9 @@
 			transform: scale(1.3, 1.3);
 		}
 	}
-  
 	/* Header */
   
 	/* Navegación */
-  
 	.contenedor .nav {
 		text-align: center;
 		grid-area: nav;
@@ -1032,15 +943,15 @@
 			border: none;
 	
 			> li {
-			margin: 0 4px;
-			width: 140px;
+			margin: 0 0.25rem;
+			width: 150px;
 			border: 2px solid $colorPrincipal;
 			}
 	
 			li {
 			ul li {
-				width: 140px;
-				border: 2px solid $colorPrincipal;
+				width: 9.4rem;
+				border: 0.15rem solid $colorPrincipal;
 				margin-top: 5%;
 			}
 	
@@ -1049,55 +960,41 @@
 			}
 			}
 		}
-	
-		.home {
-			background: $colorPrincipal;
-		}
 	}
-  
 	/* Navegación */
   
 	/* Portada */
-  
-	#carouselExampleIndicators > .tamaño {
-		height: 680px;
-	}
-  
-	.tamaño {
-		top: -60px;
-	}
-  
 	.titulo {
-		height: 695px;
-	}
-  
-	.titulo1 {
-		top: 15px;
-		left: 20px;
-		z-index: 1;
-	
-		> h1 {
-			font-size: 55px;
+		height: auto;
+
+		.titulo1 {
+			top: 0.3rem;
+			left: 1rem;
+			z-index: 2;
+			position: absolute;
+		
+			> h1 {
+				font-size: 3.5rem;
+			}
 		}
 	}
-  
+
+	#carouselExampleIndicators > .tamaño {
+		top: auto;
+	}
 	/* Portada */
   
 	/* Main */
-  
 	.contenedor .main {
 		@include cajasDesktop;
 		grid-area: main;
 	}
   
 	.imagenMain {
-		border-radius: 10px;
-		width: 240px;
-		height: 160px;
+		border-radius: 0.6rem;
 	}
   
 	.cuadroUno {
-		/* background-color: lightblue; */
 		padding: 2%;
 		width: 20%;
 		text-align: center;
@@ -1107,336 +1004,62 @@
 	}
   
 	.cuadroDos {
-		/* background: blue; */
 		padding: 2%;
-		font-size: 14px;
 		width: 80%;
 		text-align: justify;
-		line-height: 25px;
+		line-height: 1.5rem;
 	}
-  
+
+	.parrafoIndex{
+		font-size: 1rem;
+		line-height: 2.5rem;
+	}
 	/* Main */
   
 	/* Section */
-  
 	.contenedor {
 		.seccion-1 {
-			/* background-color: #0011ad; */
 			margin: 0;
 			grid-area: seccion-1;
 		}
 	
 		.seccion-2 {
-			/* background-color: #0011ad; */
 			margin: 0;
 			grid-area: seccion-2;
 		}
 	}
   
 	.cuadroTres {
-		/* background: blue; */
 		border: none;
 		list-style-position: inside;
-		font-size: 15px;
-		text-align: justify;
-	}
-  
-	.cuadroDos > p {
-		font-size: 18px;
-		text-align: center;
 	}
   
 	.cuadroTres > p {
-		font-size: 16px;
-		text-align: justify;
-		letter-spacing: 1px;
-		line-height: 25px;
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		line-height: 2rem;
 	}
-  
 	/* Section */
   
 	/* Footer */
-  
 	.info {
-		font-size: 12px;
+		font-size: 0.8rem;
 	}
   
 	.iconos2 {
-		font-size: 30px;
+		font-size: 1.9rem;
 		color: #7e7e7e;
 	}
-  
 	/* Footer */
   
 	/* --------------------------------------------------------------------------------------------- */
   
-	/* Página Ayuda*/
-  
-	.contenedorAyuda {
-		@include propiedadesContenedoresDesktop;
-		grid-template-rows: repeat(10, auto);
-		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "footer";
-	
-		.nav {
-			@include navDesktop;
-		}
-	
-		.caja1 {
-			margin: 0;
-			grid-area: caja1;
-		}
-	}
-  
-	/* Cajas */
-  
-	.caja1 > {
-		h2 {
-			font-size: 22px;
-		}
-	
-		h3 {
-			text-align: center;
-			font-size: 18px;
-		}
-	}
-  
-	.contenedorAyuda {
-		.caja2 {
-			@include cajasDesktop;
-			grid-area: caja2;
-		}
-	
-		.caja3 {
-			@include cajasDesktop;
-			grid-area: caja3;
-		}
-	
-		.caja4 {
-			@include cajasDesktop;
-			grid-area: caja4;
-		}
-	
-		.caja5 {
-			@include cajasDesktop;
-			grid-area: caja5;
-		}
-	
-		.caja6 {
-			@include cajasDesktop;
-			grid-area: caja6;
-		}
-	}
-  
-	.scaleBox {
-		transition: 3s;
-	
-		&:hover {
-			transform: scale(1.05, 1.05);
-		}
-	}
-  
-	.imagenes {
-		border-radius: 10px;
-		width: 240px;
-		height: 160px;
-	}
-  
-	.textoTitulo {
-		font-size: 20px;
-		color: $colorPrincipal;
-		margin-bottom: 15px;
-		text-align: center;
-	}
-  
-	.textoInfo {
-		font-size: 16px;
-		margin-top: 15px;
-		line-height: 25px;
-	}
-  
-	.cuadroDos .textoInfo {
-		text-align: justify;
-	}
-  
-	/* Cajas */
-	/* Página Ayuda*/
-  
-	/* --------------------------------------------------------------------------------------------- */
-  
-	/* Página Fases*/
-  
-	.contenedorFases {
-		@include propiedadesContenedoresDesktop;
-		grid-template-rows: repeat(9, auto);
-		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "caja5" "footer";
-	
-		.nav {
-			@include navDesktop;
-		}
-	
-		.caja1 {
-			margin: 0;
-			grid-area: caja1;
-		}
-	
-		.caja2 {
-			@include cajasDesktop;
-			grid-area: caja2;
-		}
-	
-		.caja3 {
-			@include cajasDesktop;
-			grid-area: caja3;
-		}
-	
-		.caja4 {
-			@include cajasDesktop;
-			grid-area: caja4;
-		}
-	
-		.caja5 {
-			@include cajasDesktop;
-			grid-area: caja5;
-		}
-	}
-	/* Página Fases*/
-  
-	/* --------------------------------------------------------------------------------------------- */
-  
-	/* Página Servicios*/
-  
-	.contenedorServicios {
-		@include propiedadesContenedoresDesktop;
-		grid-template-rows: repeat(8, auto);
-		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "caja3" "caja4" "footer";
-	
-		.nav {
-			@include navDesktop;
-		}
-	
-		.caja1 {
-			margin: 0;
-			grid-area: caja1;
-		}
-	
-		.caja2 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja2;
-		}
-	
-		.caja3 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja3;
-		}
-	
-		.caja4 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja4;
-		}
-	}
-	/* Página Servicios*/
-  
-	/* --------------------------------------------------------------------------------------------- */
-  
-	/* Página Testimonios*/
-  
-	.contenedorTestimonios {
-		width: 95%;
-		max-width: 1400px;
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(7, auto);
-		grid-template-areas: "header         header" "nav            nav" "titulo         titulo" "caja1          caja1" "caja2          caja3" "caja4          caja5" "footer         footer";
-	
-		.nav {
-			@include navDesktop;
-		}
-	
-		.caja1 {
-			margin: 0;
-			grid-area: caja1;
-		}
-	}
-  
-	/* Cajas */
-  
-	.caja1 > {
-		h2 {
-			font-size: 22px;
-		}
-	
-		h3 {
-			text-align: center;
-			font-size: 18px;
-		}
-	}
-  
-	.contenedorTestimonios {
-		.caja2 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja2;
-		}
-	
-		.caja3 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja3;
-		}
-	
-		.caja4 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja4;
-		}
-	
-		.caja5 {
-			@include propiedadesTestimonioDesktop;
-			grid-area: caja5;
-		}
-	}
-  
-	/* Cajas */
-	/* Página Testimonios*/
-  
-	/* --------------------------------------------------------------------------------------------- */
-  
-	/* Página Contacto*/
-  
-	.contenedorContacto {
-		@include propiedadesContenedoresDesktop;
-		grid-template-rows: repeat(6, auto);
-		grid-template-areas: "header" "nav" "titulo" "caja1" "caja2" "footer";
-	
-		.nav {
-			@include navDesktop;
-		}
-	
-		.caja1 {
-			margin: 0;
-			grid-area: caja1;
-		}
-	
-		.caja2 {
-			width: 50%;
-			margin: 0;
-			padding: 10px;
-			margin-left: 25%;
-			grid-area: caja2;
-		}
-	}
-  
-	/* Cajas contacto */
-  
-	.boton {
-		background: transparent;
-		transition: 0.5s;
-	
-		&:hover {
-			background: none;
-			box-shadow: 0 0 10px $colorPrincipal, 0 0 40px $colorPrincipal, 0 0 80px $colorPrincipal;
-		}
-	}
-  
-	/* Cajas contacto */
-	/* Página Contacto*/
+	/* Secciones */
+	@include seccionAyuda;
+	@include seccionFases;
+	@include seccionServicios;
+	@include seccionTestimonios;
+	@include seccionContacto;
+	/* Secciones */
 }
 // Desktop
