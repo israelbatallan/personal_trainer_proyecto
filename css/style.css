@@ -7,8 +7,8 @@ html {
   font-size: 100%; }
 
 body {
-  background: #020020;
-  background: radial-gradient(circle, #020020 0%, black 100%);
+  background: #000050;
+  background: radial-gradient(circle, #000050 0%, black 75%);
   color: #e9ecf4;
   font-family: 'Roboto', sans-serif; }
 
@@ -46,7 +46,11 @@ body {
   .logo > a {
     text-decoration: none; }
   .iconos1 {
+<<<<<<< HEAD
     font-size: 1.4rem;
+=======
+    font-size: 1.7rem;
+>>>>>>> rama_ajustes
     color: #7e7e7e;
     display: flex;
     justify-content: flex-end; }
@@ -145,14 +149,22 @@ body {
   .footer > div {
     width: 50%; }
   .info {
+<<<<<<< HEAD
     font-size: 0.6rem;
+=======
+    font-size: 0.7rem;
+>>>>>>> rama_ajustes
     display: flex;
     justify-content: flex-start; }
     .info > ul {
       list-style: none;
       padding: 0; }
   .iconos2 {
+<<<<<<< HEAD
     font-size: 1,4rem;
+=======
+    font-size: 1.7rem;
+>>>>>>> rama_ajustes
     color: #7e7e7e;
     display: flex;
     justify-content: flex-end; }
@@ -249,7 +261,11 @@ body {
   .imagenes {
     border-radius: 0.6rem; }
   .textoTitulo {
+<<<<<<< HEAD
     font-size: 1.15rem;
+=======
+    font-size: 1.2rem;
+>>>>>>> rama_ajustes
     color: #ff8000;
     margin-bottom: 0.95rem;
     text-align: center; }
@@ -397,6 +413,17 @@ body {
       justify-content: center;
       align-items: center;
       grid-area: caja4; }
+    .contenedorServicios .tituloServicios {
+      color: #ff8000; }
+    .contenedorServicios .subTituloServicios {
+      text-align: center; }
+    .contenedorServicios section > div {
+      background: #0000007a;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      margin: 5px 0;
+      padding: 10px; }
     .contenedorServicios .footer {
       background-color: #091224;
       display: flex;
@@ -583,7 +610,11 @@ body {
   .logo > a > .subTituloLogo {
     font-size: 0.8rem; }
   .iconos1 {
+<<<<<<< HEAD
     font-size: 1.9rem; }
+=======
+    font-size: 2rem; }
+>>>>>>> rama_ajustes
   /* Header */
   /* Portada */
   .titulo {
@@ -622,7 +653,11 @@ body {
   .info {
     font-size: 0.9rem; }
   .iconos2 {
+<<<<<<< HEAD
     font-size: 1.9rem; }
+=======
+    font-size: 2rem; }
+>>>>>>> rama_ajustes
   /* Footer */ }
 
 @media (orientation: landscape) and (min-width: 769px) and (max-width: 1024px) {
@@ -639,7 +674,11 @@ body {
   .logo > a > .subTituloLogo {
     font-size: 0.8rem; }
   .iconos1 {
+<<<<<<< HEAD
     font-size: 1.9rem; }
+=======
+    font-size: 2rem; }
+>>>>>>> rama_ajustes
   /* Header */
   /* Navegación */
   .contenedor .nav {
@@ -704,7 +743,11 @@ body {
   .info {
     font-size: 0.9rem; }
   .iconos2 {
+<<<<<<< HEAD
     font-size: 1.9rem; }
+=======
+    font-size: 2rem; }
+>>>>>>> rama_ajustes
   /* Footer */
   /* Secciones */
   /* Página Ayuda*/
@@ -870,6 +913,13 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       grid-area: caja4; }
+<<<<<<< HEAD
+=======
+    .contenedorServicios .subTituloServicios {
+      color: #ff8000;
+      margin-bottom: 0.95rem;
+      text-align: center; }
+>>>>>>> rama_ajustes
   /* Página Servicios*/
   /* Página Testimonios*/
   .contenedorTestimonios {
@@ -1235,6 +1285,10 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       grid-area: caja4; }
+    .contenedorServicios .subTituloServicios {
+      color: #ff8000;
+      margin-bottom: 0.95rem;
+      text-align: center; }
   /* Página Servicios*/
   /* Página Testimonios*/
   .contenedorTestimonios {
